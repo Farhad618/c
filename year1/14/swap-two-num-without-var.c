@@ -14,6 +14,7 @@ int main()
 
 	printf("Now the first number is: %d\n", num1);
 	printf("Now the second number is: %d", num2);
+	
 	getch();
 	return 0;
 }

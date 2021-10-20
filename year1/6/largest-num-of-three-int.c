@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {
@@ -15,5 +16,6 @@ int main()
 		printf("%d is greater than %d and %d\n", num3, num1, num2);
 	}
 
+	getch();
 	return 0;
 }

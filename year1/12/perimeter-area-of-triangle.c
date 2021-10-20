@@ -1,22 +1,46 @@
-/* C Program to find Area of a Triangle and Perimeter of a Triangle */
-
-#include<stdio.h>
-#include<math.h>
+// perimeter-area-of-rectangle.c
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-  float a, b, c, Perimeter, s, Area;
-  
-  printf("\nPlease Enter three sides of triangle\n");
-  scanf("%f%f%f",&a,&b,&c);
-   
-  Perimeter = a+b+c;
-  s = (a+b+c)/2;
-  Area = sqrt(s*(s-a)*(s-b)*(s-c));
-   
-  printf("\n Perimeter of Traiangle = %.2f\n", Perimeter);
-  printf("\n Semi Perimeter of Traiangle = %.2f\n",s);
-  printf("\n Area of triangle = %.2f\n",Area);
+	float side1, side2, base, height;
 
-  return 0;
+	printf("Enter the first, second side and base: ");
+	scanf("%f %f %f", &side1, &side2, &base);
+	printf("Enter the height: ");
+	scanf("%f", &height);
+
+	if (side1!=0 && side2!=0 && base!=0 && height==0)
+	{
+		if (side1+side2 > base)
+		{
+			printf("\nPerimeter of the triangle is: %f\n", side1+base+side2);
+		} else
+		{
+			printf("Enter valid sides of the triangle.\n");
+		}
+	}
+	else if (side1==0 && side2==0 && base!=0 && height!=0)
+	{
+		printf("Area of the triangle is: %f\n", (height*base)/2);
+	}
+	else if (side1!=0 && side2!=0 && base!=0 && height!=0)
+	{
+		if (side1+side2 > base)
+		{
+			printf("\nPerimeter of the triangle is: %f\n", side1+base+side2);
+		} else
+		{
+			printf("Enter valid sides of the triangle.\n");
+		}
+		printf("Area of the triangle is: %f\n", (height*base)/2);		
+	}
+	else
+	{
+		printf("Inputs are not valid.\n");
+	}
+
+	getch();
+	return 0;
 }

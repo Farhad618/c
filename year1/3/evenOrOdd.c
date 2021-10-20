@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main()
 {   
@@ -13,6 +14,7 @@ int main()
       printf("%d is a odd number", num);
     }
 
+    getch();
     return 0;
     
 }

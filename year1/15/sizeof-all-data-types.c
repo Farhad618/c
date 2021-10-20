@@ -40,4 +40,20 @@ unsigned char
 float
 double
 long double
+
+short int              : 2 bytes
+unsigned short int     : 2 bytes
+unsigned int           : 4 bytes
+int                    : 4 bytes
+long int               : 4 bytes
+unsigned long int      : 4 bytes
+long long int          : 8 bytes
+unsigned long long int : 8 bytes
+signed char            : 1 bytes
+unsigned char          : 1 bytes
+float                  : 4 bytes
+double                 : 8 bytes
+long double            : 16 bytes
+
+
 */

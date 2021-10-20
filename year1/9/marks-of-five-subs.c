@@ -15,6 +15,7 @@ int main()
 
 	printf("Total of the subjects is: %f\n", total);
 	printf("Percentage of the total is: %f", total/5);
+	
 	getch();
 	return 0;
 }
