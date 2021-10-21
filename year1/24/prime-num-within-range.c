@@ -3,33 +3,32 @@
 
 int main()
 {
-	int from, to, i;
+	int from, to, i, isPrime=1;
 
 	printf("Enter a range: ");
 	scanf("%d %d", &from, &to);
+	printf("All prime numbers btween %d and %d are:\n", from, to);
 
 	for (int j = from; j <= to; j++)
 	{
-		// printf("%d is checking\n", j);
 		for (i = 2; i < j; i++)
 		{
-			if (!(j%i))
+			if (j%i)
 			{
-				// printf("%d not prime\n", j);
-				
-				// continue;
+				isPrime=1;
+			}
+			else
+			{
+				isPrime=0;
 				break;
 			}
-			printf("%d prime\n", j);
-			break;
-			
 		}
-		
-		
-	}
 
-	
-	
+		if (isPrime)
+		{
+			printf("%d ", j);
+		}
+	}
 
 	getch();
 	return 0;
